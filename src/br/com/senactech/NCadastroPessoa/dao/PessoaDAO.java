@@ -88,4 +88,27 @@ public class PessoaDAO {
     }
     }
     
+    public boolean verCPF(String cpf) throws SQLException{
+         //Buscar conexao do BD
+        Connection con = Conexao.getConexao();
+        //Cria espaço de trabalho SQL, é a área no Java onde vamos executar  os scripts SQL
+        Statement stat = con.createStatement();
+        
+        try {
+            String sql;
+            sql = "select cpf from pessoa where cpf = " + cpf;
+            ResultSet rs = stat.executeQuery(sql);
+            
+    } catch (SQLException e) {
+
+       
+
+    } finally {
+
+       
+
+    }
+    }
+    
+    
 }
