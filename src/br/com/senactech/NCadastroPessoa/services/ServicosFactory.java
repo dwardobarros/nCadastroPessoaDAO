@@ -11,4 +11,9 @@ package br.com.senactech.NCadastroPessoa.services;
  */
 public class ServicosFactory {
     
+    private static PessoaServicos pessoaServicos = new PessoaServicos();
+    
+    public static PessoaServicos getPessoaServicos() {
+        return pessoaServicos;
+    }
 }

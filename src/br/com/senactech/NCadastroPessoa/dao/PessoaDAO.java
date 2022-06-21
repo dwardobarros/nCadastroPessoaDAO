@@ -10,7 +10,6 @@ import br.com.senactech.NCadastroPessoa.model.Pessoa;
 import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 

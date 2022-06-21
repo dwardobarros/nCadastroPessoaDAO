@@ -11,4 +11,9 @@ package br.com.senactech.NCadastroPessoa.dao;
  */
 public class DAOFactory {
     
+    private static PessoaDAO pDAO = new PessoaDAO();
+    
+    public static PessoaDAO getPessoaDAO() {
+        return pDAO;
+    }
 }
